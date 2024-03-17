@@ -1,11 +1,11 @@
 package thirdLesson;
 
-public class Vacancy implements MutableViewable {
+public class Vacancy<T extends Content> implements MutableViewable, WithContent<T> {
   private int viewsCount = 0;
-  private VacancyContent content;
+  private final T content;
   private boolean isFavorite;
 
-  public Vacancy(VacancyContent content) {
+  public Vacancy(T content) {
     this.content = content;
   }
 
@@ -22,5 +22,10 @@ public class Vacancy implements MutableViewable {
   public boolean changeFavoriteState() {
     isFavorite = !isFavorite;
     return isFavorite;
+  }
+
+  @Override
+  public T getContent() {
+    return content;
   }
 }

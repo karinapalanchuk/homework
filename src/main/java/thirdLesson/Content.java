@@ -2,12 +2,12 @@ package thirdLesson;
 
 import java.util.*;
 
-public abstract class VacancyContent {
+public abstract class Content {
 
   private final String title;
   private final List<Review> reviews = new ArrayList<>();
 
-  protected VacancyContent(String title) {
+  protected Content(String title) {
     this.title = title;
   }
 

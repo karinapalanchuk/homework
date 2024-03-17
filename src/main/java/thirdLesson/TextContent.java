@@ -1,9 +1,9 @@
 package thirdLesson;
 
-public class VacancyTextContent extends VacancyContent{
+public class TextContent extends Content {
   private final String description;
 
-  protected VacancyTextContent(String title, String description) {
+  protected TextContent(String title, String description) {
     super(title);
     this.description = description;
   }
