@@ -1,9 +1,9 @@
 package thirdLesson;
 
-public class VacancyImageContent extends VacancyContent{
+public class ImageContent extends Content {
   private final String imageUrl;
 
-  protected VacancyImageContent(String title, String imageUrl) {
+  protected ImageContent(String title, String imageUrl) {
     super(title);
     this.imageUrl = imageUrl;
   }
