@@ -24,6 +24,10 @@ public class Vacancy<T extends Content> implements MutableViewable, WithContent<
     return isFavorite;
   }
 
+  public boolean getIsFavorite() {
+    return isFavorite;
+  }
+
   @Override
   public T getContent() {
     return content;
